@@ -28,6 +28,19 @@
             text-decoration: underline;
         }
     </style>
+   <!--link styled as a button--><!--- <style>
+        a :link, a :visited{
+            background-color: brown;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-flex;
+        }
+        a :hover, a :active{
+            background-color: red;
+        }
+    </style>-->
 </head>
 <!--html hyperlinks(target attributes)-->
 <body>
@@ -39,10 +52,31 @@
  <p>If you set the target attribute to "_top", the link will open in the full body of the window.</p>
  <a href="https://www.google.com" target="_top">Google</a>
  <p>If you set the target attribute to "_parent", the link will open in the parent frame.</p>
- <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>   
+ <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
  <!--Using bottons as links-->
  <h3>Buttons as links</h3>
  <p>CLick on this button to redirect</p>
  <button onclick="google.com">Html Links</button>
+<!--bookmarking-->
+ <p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C6">Jump to Chapter 6</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla lore</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C6">Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
 </body>
 </html>
