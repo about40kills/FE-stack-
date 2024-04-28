@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29yayUyMGRlc2t8ZW58MHx8MHx8fDA%3D);
+        }
+    </style>
 </head>
 <body>
   <p>inserting images</p>
@@ -14,14 +19,28 @@
   <p><a href="https://ide.geeksforgeeks.org/tryit.php">
     <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png" alt="geeks" style="float: right;"></a>
   </p>
-  <!--image map-->
+  <!--image map
   <h2>image maps</h2>
   <p>Click on the computer, the mouse, or the coffee to read more about them</p>
   <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" usemap="#workdesk" style="width: 400;height: 379;" alt="">
   <map name="workdesk">
     <area shape="rect" coords="345,167,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer#:~:text=External%20links-,Computer,-231%20languages">
     <area shape="default" coords="367,187,445,118" alt="mouse" href="https://en.wikipedia.org/wiki/Computer_mouse#:~:text=External%20links-,Computer%20mouse,-126%20languages">
-    
-  </map>
+  </map>-->
+  <h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhcnxlbnwwfHwwfHx8MA%3D%3D">
+  <source media="(min-width: 465px)" srcset="https://plus.unsplash.com/premium_photo-1685287731145-304b021f9a50?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29yayUyMGRlc2t8ZW58MHx8MHx8fDA%3D">
+  <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FyfGVufDB8fDB8fHww" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
 </body>
 </html>
