@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlinks</title>
     Target attributs examples
+    <!--Link colors-->
+    <style>
+        a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            color: brown;
+            background-color: none;
+            text-decoration: underline;
+        }
+        a :active{
+            color: yellow;
+            background-color: none;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <!--html hyperlinks(target attributes)-->
 <body>
@@ -17,5 +40,9 @@
  <a href="https://www.google.com" target="_top">Google</a>
  <p>If you set the target attribute to "_parent", the link will open in the parent frame.</p>
  <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>   
+ <!--Using bottons as links-->
+ <h3>Buttons as links</h3>
+ <p>CLick on this button to redirect</p>
+ <button onclick="google.com">Html Links</button>
 </body>
 </html>
