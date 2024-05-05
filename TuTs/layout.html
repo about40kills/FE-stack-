@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .head1{
+            font-size: 40px;
+            color: #007788;
+            font-weight: bold;
+        }
+        .head2{
+            font-size: 17px;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+        body{
+            margin: 0 auto;
+            background-position: center;
+            background-size: contain;
+        }
+        .menu{
+            position: sticky;
+            top: 0;
+            background-color: #007788;
+            padding: 10px, 0px, 10px, 0px;
+            color: white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log{
+            right: auto;
+            float: right;
+        }
+        footer{
+            bottom: 0px;
+            width: 100%;
+            background-color: #000;
+            color:#fff;
+        }
+        .body-sec{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <div class="head1">BLOGSPOT</div>
+        <div class="head2">A daily update to brew blog</div>
+    </header>
+    <!--Nav bar-->
+    <nav class="Menu">
+        <a href="#home">HOME</a>
+        <a href="#latest">LATEST</a>
+        <a href="#top">TOP</a>
+        <a href="#notifications">NOTIFICATION</a>
+        <div class="menu-log">
+            <a href="#login">LOGIN</a>
+        </div>
+    </nav>
+    <!--Main body content-->
+    <main class="body-sec">
+        <section id="Content">
+            <p>The page content goes in here</p>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <a href="https//twitter.com">Twitter</a>
+        <a href="https//facebook.com">Facebook</a>
+        <a href="https//instagram.com">Instagram</a>
+    </footer>
+</body>
+</html>
