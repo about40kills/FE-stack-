@@ -7,13 +7,13 @@
     <style>
         .head1{
             font-size: 40px;
-            color: #007788;
+            color: #009900;
             font-weight: bold;
         }
         .head2{
             font-size: 17px;
             margin-left: 10px;
-            margin-top: 15px;
+            margin-bottom: 15px;
         }
         body{
             margin: 0 auto;
@@ -23,8 +23,8 @@
         .menu{
             position: sticky;
             top: 0;
-            background-color: #007788;
-            padding: 10px, 0px, 10px, 0px;
+            background-color: #009900;
+            padding: 10px 0px 10px 0px;
             color: white;
             margin: 0 auto;
             overflow: hidden;
@@ -42,12 +42,18 @@
             float: right;
         }
         footer{
-            bottom: 0px;
             width: 100%;
+            bottom: 0%;
             background-color: #000;
-            color:#fff;
+            color: #fff;
+            position: absolute;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
         }
-        .body-sec{
+        .body_sec{
             margin-left: 20px;
         }
     </style>
@@ -59,19 +65,21 @@
         <div class="head2">A daily update to brew blog</div>
     </header>
     <!--Nav bar-->
-    <nav class="Menu">
+    <nav class="menu">
         <a href="#home">HOME</a>
-        <a href="#latest">LATEST</a>
         <a href="#top">TOP</a>
-        <a href="#notifications">NOTIFICATION</a>
+        <a href="#latest">LATEST</a>
+        <a href="#notification">
+            NOTIFICATIONS
+        </a>
         <div class="menu-log">
             <a href="#login">LOGIN</a>
         </div>
     </nav>
     <!--Main body content-->
-    <main class="body-sec">
+    <main class="body_sec">
         <section id="Content">
-            <p>The page content goes in here</p>
+            <h3>The page content goes in here</h3>
         </section>
     </main>
     <!--Footer-->
