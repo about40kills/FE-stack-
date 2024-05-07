@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Forms</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form{
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px
+            rgba(0, 0, 0, 0.1);
+        }
+        fieldset{
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+        legend{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea{
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"]{
+            margin-left: 20px;
+        }
+        input[type="submit"]{
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
  <h2>HTML FORMS</h2>
  <p>Collects user personal information such as username and password.</p>
- <form>
+ <form class="one">
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username"><br><br>
 
@@ -17,5 +64,49 @@
 
     <input type="submit" value="submit">
  </form>   
+ <h4>This HTML form collects user personal information including name, email, password, gender, date of birth, and address. It features proper styling for input fields and submission button.</h4>
+ <form class="two">
+    <fieldset>
+        <legend>User Personal Information</legend>
+        <label>Enter your full name</label>
+        <input 
+            type="text" 
+            name="name"/>
+        <label>Enter your email</label>
+        <input 
+            type="email" 
+            name="email"/>
+        <label>Enter your password</label>
+        <input 
+            type="password" 
+            name="password"/>
+        <label>Confirm your password</label>
+        <input 
+            type="password" 
+            name="confirmpassword"/>
+        <label>Enter your gender</label>
+        <input
+            type="radio" 
+            name="gender"
+            value="male"/>Male 
+        <input 
+            type="radio" 
+            name="gender"
+            value="female"/>female
+        <input
+            type="radio"
+            name="gender"
+            value="other"/>other
+        <label>Enter your date of birth</label>
+        <input
+            type="date"
+            name="dob"/>
+        <label>Enter your address</label>
+        <textarea name="address"></textarea>
+        <input
+            type="submit"
+            value="submit"/>
+    </fieldset>
+ </form>
 </body>
 </html>
