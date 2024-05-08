@@ -58,11 +58,13 @@
  <!--added a link redirectiom-->
  <form action="/action_page" target="_blank">
     <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
+    <input type="text" id="username" name="username"><br>
     <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br><br>
+    <input type="password" id="password" name="password"><br>
     <input type="submit" value="submit">
-
+    <label for="files">Select files</label>
+    <input type="file" name="files" multiple>
+    <input type="submit" value="Submit">
     <label for="browsers">Choose a browser</label>
     <input list="browsers" name="browser">
   <datalist id="browsers">
@@ -78,7 +80,7 @@
   <input type="submit" value="Submit">
  </form>   
  <h4>This HTML form collects user personal information including name, email, password, gender, date of birth, and address. It features proper styling for input fields and submission button.</h4>
- <form action="/action_page" target="blank">
+ <form action="/action_page" target="blank" autocomplete="on">
     <fieldset>
         <legend>User Personal Information</legend>
         <label>Enter your full name</label>
@@ -88,7 +90,7 @@
         <label>Enter your email</label>
         <input 
             type="email" 
-            name="email" placeholder="johndoe77@domain.com"/>
+            name="email" placeholder="johndoe77@domain.com" size="50"/>
         <label>Enter your password</label>
         <input 
             type="password" 
