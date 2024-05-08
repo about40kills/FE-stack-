@@ -62,7 +62,7 @@
     <label for="password">Password:</label><br>
     <input type="password" id="password" name="password"><br><br>
     <input type="submit" value="submit">
-    
+
     <label for="browsers">Choose a browser</label>
     <input list="browsers" name="browser">
   <datalist id="browsers">
@@ -73,6 +73,9 @@
     <option value="Safari">
   </datalist>
   <input type="submit">
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  <input type="submit" value="Submit">
  </form>   
  <h4>This HTML form collects user personal information including name, email, password, gender, date of birth, and address. It features proper styling for input fields and submission button.</h4>
  <form action="/action_page" target="blank">
