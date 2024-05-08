@@ -56,14 +56,23 @@
  <h2>HTML FORMS</h2>
  <p>Collects user personal information such as username and password.</p>
  <!--added a link redirectiom-->
- <form action="/actio_page" target="_blank">
+ <form action="/action_page" target="_blank">
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username"><br><br>
-
     <label for="password">Password:</label><br>
     <input type="password" id="password" name="password"><br><br>
-
     <input type="submit" value="submit">
+    
+    <label for="browsers">Choose a browser</label>
+    <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
  </form>   
  <h4>This HTML form collects user personal information including name, email, password, gender, date of birth, and address. It features proper styling for input fields and submission button.</h4>
  <form action="/action_page" target="blank">
@@ -107,12 +116,22 @@
         <input
             type="submit"
             value="submit"/>
-        <label for="cars">CHoose a car</label>
+        <label for="cars">Choose a car</label>
         <select id="cars" names="cars">
             <option value="volvo">VOLVO</option>
-            <option value="CHANGHAN"></option>
-            <option value="zeekeř"></option>
-    </select>
+            <option value="CHANGHAN">CHANGHAN</option>
+            <option value="zeekeř">zeekeř</option>
+        </select>
+        <label for="browsers">Choose a browser</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
     </fieldset>
  </form>
 </body>
