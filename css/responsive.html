@@ -6,6 +6,7 @@
     <title>Responsive Website Design</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--google//font awesome 4 cdn-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <link rel="icon" href="/html/Images/bmw.jpg" type="image/x-icon" />
@@ -14,8 +15,9 @@
     <section class="header">
       <nav>
         <a href="responsive.html"><img class="davis" src="/html/Images/Davis1.jpeg"></a>
-        <div class="nav-links">
-          <i class="fa fa-times"></i>
+        <div class="nav-links" id="navLinks">
+          <!--Font awesome 4 icons-->  
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -24,13 +26,30 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
     <div class="text-box">
       <h1>World's Biggest University</h1>
       <p>Designing a website now is one of the most easiest thing to do.You just have to learn HTML, CSS, <br> Javascript and you're good to go.</p>
       <a href="" class="press-btn" >Visit us to know more</a>
-    </div>
+    </div> 
     </section>
+
+    <!----- Courses ----->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis autem possimus suscipit ipsam et illum dolorum natus quo quae, quam ipsa maxime cupiditate quaerat sint repellat explicabo minima porro nihil?</p>
+    </section>
+    <!--Javascript for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function  hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    
+    </script>
   </body>
 </html>
